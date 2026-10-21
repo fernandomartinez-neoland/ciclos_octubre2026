@@ -91,7 +91,13 @@ frutas.forEach((item, index) => {
   console.log(item);
   console.log(index);
   if (item == "kiwi") {
-    console.log(`me quitaste mi manzana ${item}`);
+    // el texto con backtick permite usar variables dentro de las comillas envolviendolo en "${}"
+    console.log(`me quitaste mi manzana ${item} asdasda asdasd qasdasdas`);
+    // en el console.log separar el texto de una variable con una "coma" agrega un espacio y concatena la variable
+    console.log("me quitaste mi manzana", item);
+    // si se concatena texto usando el simbolo "+" se unen ambos textos de manera directa, si se requeire de un espacio en blanco se concatena con comisas dobles simples o backtick que contengan ese espcaio en blanco " "
+    console.log("me quitaste mi manzana"+item+' a');
+
   }
 });
 
